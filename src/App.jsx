@@ -30,7 +30,7 @@ const App = () => {
         <nav className="navbar">
           <ul>
             <li><a href="/">Home</a></li>
-            <li><button onClick={handleDownloadClick}>Download Chrome Extension</button></li>
+            <li><button onClick={handleDownloadClick}>Download Extension</button></li>
           </ul>
         </nav>
 
