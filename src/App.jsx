@@ -11,10 +11,10 @@ const App = () => {
   const handleDownload = (browser) => {
     if (browser === "chrome") {
       // Replace with the path to the Chrome extension folder
-      window.location.href = "mailvelope.chrome.zip";
+      window.location.href = "Mail.Enc.chrome.zip";
     } else if (browser === "firefox") {
       // Replace with the path to the Firefox extension folder
-      window.location.href = "/path/to/firefox-extension.zip";
+      window.location.href = "Mail.Enc.firefox.zip";
     }
   };
 
