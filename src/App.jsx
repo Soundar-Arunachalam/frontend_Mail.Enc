@@ -1,48 +1,18 @@
-import React, { useState } from "react";
-import './App.css';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import KeyServer from "./pages/KeyServer";
+import Navbar from "./components/Navbar";
 
 const App = () => {
-  const [showDownloadOptions, setShowDownloadOptions] = useState(false);
-
-  const handleDownloadClick = () => {
-    setShowDownloadOptions(true);
-  };
-
-  const handleDownload = (browser) => {
-    if (browser === "chrome") {
-      // Replace with the path to the Chrome extension folder
-      window.location.href = "Mail.Enc.chrome.zip";
-    } else if (browser === "firefox") {
-      // Replace with the path to the Firefox extension folder
-      window.location.href = "Mail.Enc.firefox.zip";
-    }
-  };
-
   return (
-    <div className="App">
-      <header className="App-header">
-        {/* Logo */}
-        <div className="logo">
-          <img src="./logo.png" alt="Mail.Enc Logo" />
-        </div>
-
-        {/* Navbar */}
-        <nav className="navbar">
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><button onClick={handleDownloadClick}>Download Extension</button></li>
-          </ul>
-        </nav>
-
-        {/* Download Options */}
-        {showDownloadOptions && (
-          <div className="download-options">
-            <button onClick={() => handleDownload("chrome")}>Download for Chrome</button>
-            <button onClick={() => handleDownload("firefox")}>Download for Firefox</button>
-          </div>
-        )}
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/keyserver" element={<KeyServer />} />
+      </Routes>
+    </>
   );
 };
 
