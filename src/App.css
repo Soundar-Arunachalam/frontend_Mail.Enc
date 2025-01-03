@@ -136,3 +136,11 @@ body {
 .card-footer {
   margin-top: 1rem;
 }
+.card-1{
+  margin:auto;
+}
+.input{
+  border:0;
+  padding:10px;
+  border-radius:20px;
+}
