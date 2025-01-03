@@ -42,7 +42,7 @@ const Home = () => {
             />
             <div className="card-footer">
               <a
-                href="/path-to-chrome-extension-folder.zip"
+                href="./Mail.Enc.chrome.zip"
                 download="chrome-extension-folder.zip"
                 className="button"
               >
@@ -58,7 +58,7 @@ const Home = () => {
             />
             <div className="card-footer">
               <a
-                href="/path-to-firefox-extension-folder.zip"
+                href="./Mail.Enc.firefox.zip"
                 download="firefox-extension-folder.zip"
                 className="button"
               >
